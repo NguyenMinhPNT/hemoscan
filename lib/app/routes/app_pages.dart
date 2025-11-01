@@ -9,34 +9,41 @@ import '../../modules/scan/scan_screen.dart';
 import '../../modules/scan/scan_binding.dart';
 import '../../modules/result/result_screen.dart';
 import '../../modules/result/result_binding.dart';
+import '../../modules/guide/guide_screen.dart';
+import '../../modules/guide/guide_binding.dart';
 import 'app_routes.dart';
 
 class AppPages {
   static final routes = [
     GetPage(
       name: AppRoutes.SPLASH,
-      page: () => SplashScreen(),
+      page: () => const SplashScreen(),
       binding: SplashBinding(),
     ),
     GetPage(
       name: AppRoutes.HOME,
-      page: () => HomeScreen(),
+      page: () => const HomeScreen(),
       binding: HomeBinding(),
     ),
     GetPage(
       name: AppRoutes.PROFILE,
-      page: () => ProfileScreen(),
+      page: () => const ProfileScreen(),
       binding: ProfileBinding(),
     ),
     GetPage(
       name: AppRoutes.SCAN,
-      page: () => ScanScreen(),
+      page: () => const ScanScreen(),
       binding: ScanBinding(),
     ),
     GetPage(
       name: AppRoutes.RESULT,
-      page: () => ResultScreen(),
+      page: () => const ResultScreen(),
       binding: ResultBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.GUIDE,
+      page: () => const GuideScreen(),
+      binding: GuideBinding(),
     ),
   ];
 }

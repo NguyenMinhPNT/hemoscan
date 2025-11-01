@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../app/routes/app_routes.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -39,8 +40,16 @@ class CustomDrawer extends StatelessWidget {
           ),
           _buildDrawerTile(
             icon: Icons.info_outline,
-            title: 'Hướng dẫn',
+            title: 'Giới thiệu',
             onTap: () => Get.back(),
+          ),
+          _buildDrawerTile(
+            icon: Icons.help_outline,
+            title: 'Hướng dẫn',
+            onTap: () {
+              Get.back(); // Đóng drawer trước
+              Get.toNamed(AppRoutes.GUIDE); // Sau đó điều hướng
+            },
           ),
           _buildDrawerTile(
             icon: Icons.bar_chart,

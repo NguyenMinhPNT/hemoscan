@@ -1,0 +1,38 @@
+{
+    "title": "Hướng dẫn sử dụng",
+    "sections": [
+        {
+            "sectionTitle": "Nguyên tắc 3 ĐÚNG khi chụp ảnh (Rất quan trọng!)",
+            "content": [
+                "Chất lượng ảnh đầu vào quyết định 90% độ chính xác của kết quả.",
+                "1. ĐÚNG ÁNH SÁNG: Chụp ảnh ở nơi có ánh sáng tự nhiên, đủ sáng (như gần cửa sổ). Tránh ánh sáng đèn vàng, phòng quá tối, hoặc ánh sáng mặt trời chiếu trực tiếp gây lóa.",
+                "2. ĐÚNG VỊ TRÍ: Dùng một ngón tay (đã rửa sạch) kéo nhẹ mi mắt dưới xuống để lộ rõ toàn bộ phần kết mạc (niêm mạc) màu hồng bên trong.",
+                "3. ĐÚNG TIÊU CỰ: Giữ điện thoại chắc tay, đảm bảo ảnh không bị mờ, nhoè. Hãy chạm vào màn hình để lấy nét (focus) trực tiếp vào vùng kết mạc mi mắt."
+            ]
+        },
+        {
+            "sectionTitle": "Phân tích kết quả",
+            "content": [
+                "Sau khi có ảnh, hãy nhấn nút 'Phân tích'.",
+                "Hệ thống AI (Google ML Kit) sẽ tự động tìm kiếm khuôn mặt và 'cắt' (crop) chính xác vùng kết mạc mắt mà bạn đã kéo ra.",
+                "Model AI sẽ phân tích màu sắc, cấu trúc vi mạch để đưa ra 2 kết quả."
+            ]
+        },
+        {
+            "sectionTitle": "Đọc hiểu kết quả",
+            "content": [
+                "Bạn sẽ nhận được 2 thông tin lâm sàng kép:",
+                "1. Phân loại: Tình trạng (Thiếu máu / Không thiếu máu).",
+                "2. Ước tính: Nồng độ Hemoglobin (Hb) (ví dụ: 11.5 g/dL)."
+            ]
+        },
+        {
+            "sectionTitle": "KHUYẾN CÁO Y TẾ (Bắt buộc đọc!)",
+            "content": [
+                "MingX HemoScan là một công cụ TẦM SOÁT, không phải 'tiêu chuẩn vàng' để CHẨN ĐOÁN XÁC ĐỊNH.",
+                "Kết quả chỉ mang tính chất tham khảo, giúp phát hiện sớm nguy cơ.",
+                "Nếu ứng dụng báo 'Thiếu máu' hoặc bạn có triệu chứng (mệt mỏi, da xanh xao), bạn BẮT BUỘC phải đến cơ sở y tế để được bác sĩ thăm khám và làm xét nghiệm máu (huyết đồ)."
+            ]
+        }
+    ]
+}
