@@ -11,6 +11,8 @@ import '../../modules/result/result_screen.dart';
 import '../../modules/result/result_binding.dart';
 import '../../modules/guide/guide_screen.dart';
 import '../../modules/guide/guide_binding.dart';
+import '../../modules/about/about_screen.dart';
+import '../../modules/about/about_binding.dart';
 import 'app_routes.dart';
 
 class AppPages {
@@ -44,6 +46,11 @@ class AppPages {
       name: AppRoutes.GUIDE,
       page: () => const GuideScreen(),
       binding: GuideBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.ABOUT,
+      page: () => const AboutScreen(),
+      binding: AboutBinding(),
     ),
   ];
 }

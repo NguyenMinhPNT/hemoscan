@@ -41,7 +41,10 @@ class CustomDrawer extends StatelessWidget {
           _buildDrawerTile(
             icon: Icons.info_outline,
             title: 'Giới thiệu',
-            onTap: () => Get.back(),
+            onTap: () {
+              Get.back(); // Đóng drawer trước
+              Get.toNamed(AppRoutes.ABOUT); // Sau đó điều hướng
+            },
           ),
           _buildDrawerTile(
             icon: Icons.help_outline,

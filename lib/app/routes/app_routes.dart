@@ -5,4 +5,5 @@ abstract class AppRoutes {
   static const SCAN = '/scan';
   static const RESULT = '/result';
   static const GUIDE = '/guide';
+  static const ABOUT = '/about';
 }

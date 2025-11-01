@@ -1,0 +1,23 @@
+{
+    "title": "Về MingX HemoScan",
+    "sections": [
+        {
+            "sectionTitle": "Giải pháp Tầm soát Thiếu máu Không xâm lấn",
+            "content": [
+                "MingX HemoScan là một dự án nghiên cứu khoa học, ứng dụng công nghệ Học Sâu (Deep Learning) để sàng lọc thiếu máu ở trẻ em mà không cần lấy máu.",
+                "Vấn đề: Thiếu máu là một trong những rối loạn dinh dưỡng phổ biến nhất toàn cầu, ảnh hưởng nghiêm trọng đến sự phát triển của trẻ. Tuy nhiên, 'tiêu chuẩn vàng' để chẩn đoán là xét nghiệm máu - một thủ thuật xâm lấn, gây đau đớn và sợ hãi cho trẻ nhỏ.",
+                "Giải pháp: Ứng dụng này tận dụng camera điện thoại để chụp ảnh kết mạc mi mắt dưới. Mô hình Trí tuệ Nhân tạo đã được huấn luyện để phân tích các đặc điểm tinh vi về màu sắc và cấu trúc vi mạch máu để đưa ra kết quả.",
+                "Kết quả kép: Hệ thống cung cấp hai thông tin lâm sàng quan trọng: (1) Phân loại tình trạng (nguy cơ Thiếu máu / Không thiếu máu) và (2) Ước tính nồng độ Hemoglobin (Hb), giúp người dùng có cái nhìn ban đầu về mức độ của tình trạng.",
+                "Sứ mệnh: Với độ nhạy phù hợp cho mục đích sàng lọc. MingX Hemoscan mong muốn trở thành công cụ hỗ trợ y tế cộng đồng, giúp các bậc phụ huynh và nhân viên y tế tuyến cơ sở phát hiện sớm các trường hợp cần can thiệp y tế, đặc biệt tại các khu vực có nguồn lực hạn chế.",
+                "Lưu ý: Đây là công cụ TẦM SOÁT, không thay thế chẩn đoán y khoa chuyên nghiệp. Luôn tham khảo ý kiến bác sĩ để có kết luận cuối cùng."
+            ]
+        },
+        {
+            "sectionTitle": "Liên hệ & Góp ý",
+            "content": [
+                "Mọi ý kiến đóng góp xin vui lòng liên hệ:",
+                "Email: nminh1243@gmail.com"
+            ]
+        }
+    ]
+}
