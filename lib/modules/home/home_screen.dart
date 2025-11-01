@@ -21,9 +21,28 @@ class HomeScreen extends GetView<HomeController> {
         title: const Text('Anemia Detect AI Pro'),
         centerTitle: true,
         actions: [
-          IconButton(
-            icon: const CircleAvatar(child: Icon(Icons.person)),
-            onPressed: controller.navigateToProfile,
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: Obx(() {
+              if (controller.username.value.isEmpty) {
+                return IconButton(
+                  icon: const CircleAvatar(child: Icon(Icons.person)),
+                  onPressed: controller.navigateToProfile,
+                );
+              } else {
+                return TextButton(
+                  onPressed: controller.navigateToProfile,
+                  child: Text(
+                    controller.username.value,
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                );
+              }
+            }),
           ),
         ],
       ),
