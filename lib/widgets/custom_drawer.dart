@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../app/routes/app_routes.dart';
+import '../controllers/theme_controller.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -66,8 +67,9 @@ class CustomDrawer extends StatelessWidget {
           ),
           _buildDrawerTile(
             icon: Icons.settings_outlined,
-            title: 'Cài đặt',
+            title: 'Sáng/Tối',
             onTap: () => Get.back(),
+            hasToggle: true,
           ),
           _buildDrawerTile(
             icon: Icons.contact_mail_outlined,
@@ -88,7 +90,25 @@ class CustomDrawer extends StatelessWidget {
     required IconData icon,
     required String title,
     required VoidCallback onTap,
+    bool hasToggle = false,
   }) {
+    if (hasToggle) {
+      // Drawer tile cho "Cài đặt" với toggle dark mode
+      final themeController = Get.put(ThemeController());
+      return Obx(
+        () => ListTile(
+          leading: Icon(icon),
+          title: Text(title),
+          trailing: Switch(
+            value: themeController.isDarkMode.value,
+            onChanged: (_) {
+              themeController.toggleTheme();
+            },
+          ),
+          onTap: onTap,
+        ),
+      );
+    }
     return ListTile(leading: Icon(icon), title: Text(title), onTap: onTap);
   }
 }
