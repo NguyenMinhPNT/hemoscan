@@ -22,9 +22,9 @@ class CustomDrawer extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
-                  'MingX Hemoscan',
-                  style: TextStyle(
+                Text(
+                  'app_name'.tr,
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -32,16 +32,16 @@ class CustomDrawer extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: Get.height * 0.01),
-                const Text(
-                  'Anemia Detection AI',
-                  style: TextStyle(color: Colors.white70, fontSize: 14),
+                Text(
+                  'app_subtitle'.tr,
+                  style: const TextStyle(color: Colors.white70, fontSize: 14),
                 ),
               ],
             ),
           ),
           _buildDrawerTile(
             icon: Icons.info_outline,
-            title: 'Giới thiệu',
+            title: 'menu_about'.tr,
             onTap: () {
               Get.back(); // Đóng drawer trước
               Get.toNamed(AppRoutes.ABOUT); // Sau đó điều hướng
@@ -49,7 +49,7 @@ class CustomDrawer extends StatelessWidget {
           ),
           _buildDrawerTile(
             icon: Icons.help_outline,
-            title: 'Hướng dẫn',
+            title: 'menu_guide'.tr,
             onTap: () {
               Get.back(); // Đóng drawer trước
               Get.toNamed(AppRoutes.GUIDE); // Sau đó điều hướng
@@ -57,28 +57,36 @@ class CustomDrawer extends StatelessWidget {
           ),
           _buildDrawerTile(
             icon: Icons.bar_chart,
-            title: 'Biểu đồ',
+            title: 'menu_chart'.tr,
             onTap: () => Get.back(),
           ),
           _buildDrawerTile(
             icon: Icons.book_outlined,
-            title: 'Kiến thức',
+            title: 'menu_knowledge'.tr,
             onTap: () => Get.back(),
           ),
           _buildDrawerTile(
             icon: Icons.settings_outlined,
-            title: 'Sáng/Tối',
+            title: 'menu_theme'.tr,
             onTap: () => Get.back(),
             hasToggle: true,
           ),
           _buildDrawerTile(
+            icon: Icons.language_outlined,
+            title: 'menu_language'.tr,
+            onTap: () {
+              Get.back(); // Đóng drawer trước
+              Get.toNamed(AppRoutes.LANGUAGE); // Sau đó điều hướng
+            },
+          ),
+          _buildDrawerTile(
             icon: Icons.contact_mail_outlined,
-            title: 'Liên lạc',
+            title: 'menu_contact'.tr,
             onTap: () => Get.back(),
           ),
           _buildDrawerTile(
             icon: Icons.health_and_safety_outlined,
-            title: 'Sàng lọc',
+            title: 'menu_screening'.tr,
             onTap: () => Get.back(),
           ),
         ],

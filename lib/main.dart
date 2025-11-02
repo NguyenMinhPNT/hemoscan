@@ -5,8 +5,10 @@ import 'package:get_storage/get_storage.dart';
 import 'app/routes/app_pages.dart';
 import 'app/routes/app_routes.dart';
 import 'app/theme/app_colors.dart';
+import 'app/translations/app_translations.dart';
 import 'services/storage_service.dart';
 import 'controllers/theme_controller.dart';
+import 'controllers/language_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,6 +18,9 @@ void main() async {
 
   // Initialize StorageService
   Get.put(StorageService());
+
+  // Initialize LanguageController
+  Get.put(LanguageController());
 
   // Set system UI overlay style
   SystemChrome.setSystemUIOverlayStyle(
@@ -45,11 +50,13 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   late ThemeController themeController;
+  late LanguageController languageController;
 
   @override
   void initState() {
     super.initState();
     themeController = Get.put(ThemeController());
+    languageController = Get.find<LanguageController>();
   }
 
   @override
@@ -58,6 +65,12 @@ class _MyAppState extends State<MyApp> {
       () => GetMaterialApp(
         title: 'MingX HemoScan',
         debugShowCheckedModeBanner: false,
+
+        // Localization
+        translations: AppTranslations(),
+        locale: languageController.currentLocale.value,
+        fallbackLocale: const Locale('vi', 'VN'),
+
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
             seedColor: AppColors.primary,

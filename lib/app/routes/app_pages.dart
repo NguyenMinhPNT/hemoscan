@@ -13,6 +13,8 @@ import '../../modules/guide/guide_screen.dart';
 import '../../modules/guide/guide_binding.dart';
 import '../../modules/about/about_screen.dart';
 import '../../modules/about/about_binding.dart';
+import '../../modules/language/language_view.dart';
+import '../../modules/language/language_binding.dart';
 import 'app_routes.dart';
 
 class AppPages {
@@ -51,6 +53,11 @@ class AppPages {
       name: AppRoutes.ABOUT,
       page: () => const AboutScreen(),
       binding: AboutBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.LANGUAGE,
+      page: () => const LanguageView(),
+      binding: LanguageBinding(),
     ),
   ];
 }

@@ -1,0 +1,38 @@
+{
+    "title": "User Guide",
+    "sections": [
+        {
+            "sectionTitle": "The 3 CORRECT Principles for Taking Photos (Very Important!)",
+            "content": [
+                "Input image quality determines 90% of result accuracy.",
+                "1. CORRECT LIGHTING: Take photos in a place with natural light, sufficiently bright (such as near a window). Avoid yellow lamp light, overly dark rooms, or direct sunlight causing glare.",
+                "2. CORRECT POSITION: Use one finger (washed clean) to gently pull down the lower eyelid to fully expose the pink conjunctiva (mucous membrane) inside.",
+                "3. CORRECT FOCUS: Hold the phone steady, ensure the image is not blurred or out of focus. Tap the screen to focus directly on the eyelid conjunctiva area."
+            ]
+        },
+        {
+            "sectionTitle": "Analyze Results",
+            "content": [
+                "Once you have the image, press the 'Analyze' button.",
+                "The AI system (Google ML Kit) will automatically search for faces and 'crop' precisely the eye conjunctiva area that you pulled out.",
+                "The AI Model will analyze color and microvascular structure to provide 2 results."
+            ]
+        },
+        {
+            "sectionTitle": "Understanding Results",
+            "content": [
+                "You will receive 2 dual clinical information:",
+                "1. Classification: Status (Anemia / No Anemia).",
+                "2. Estimation: Hemoglobin (Hb) concentration (e.g., 11.5 g/dL)."
+            ]
+        },
+        {
+            "sectionTitle": "MEDICAL ADVISORY (Must Read!)",
+            "content": [
+                "MingX HemoScan is a SCREENING tool, not the 'gold standard' for DEFINITIVE DIAGNOSIS.",
+                "Results are for reference only, helping to detect risks early.",
+                "If the app indicates 'Anemia' or you have symptoms (fatigue, pale skin), you MUST visit a healthcare facility to be examined by a doctor and have a blood test (complete blood count)."
+            ]
+        }
+    ]
+}

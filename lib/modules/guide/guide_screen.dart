@@ -13,7 +13,7 @@ class GuideScreen extends GetView<GuideController> {
         return Scaffold(
           backgroundColor: Colors.pink.shade50,
           appBar: AppBar(
-            title: const Text('Hướng dẫn sử dụng'),
+            title: Text('guide_title'.tr),
             centerTitle: true,
             backgroundColor: Colors.white,
           ),
@@ -25,7 +25,7 @@ class GuideScreen extends GetView<GuideController> {
       return Scaffold(
         backgroundColor: Colors.pink.shade50,
         appBar: AppBar(
-          title: Text(controller.guideData['title'] ?? 'Hướng dẫn sử dụng'),
+          title: Text(controller.guideData['title'] ?? 'guide_title'.tr),
           centerTitle: true,
           backgroundColor: Colors.white,
         ),

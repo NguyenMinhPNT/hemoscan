@@ -1,0 +1,23 @@
+{
+    "title": "About MingX HemoScan",
+    "sections": [
+        {
+            "sectionTitle": "Non-invasive Anemia Screening Solution",
+            "content": [
+                "MingX HemoScan is a scientific research project that applies Deep Learning technology to screen for anemia in children without the need for blood draws.",
+                "The Problem: Anemia is one of the most common nutritional disorders globally, severely affecting children's development. However, the 'gold standard' for diagnosis is a blood test - an invasive procedure that causes pain and fear in young children.",
+                "The Solution: This application leverages smartphone cameras to capture images of the lower eyelid conjunctiva. An Artificial Intelligence model has been trained to analyze subtle features in color and microvascular structure to provide results.",
+                "Dual Results: The system provides two important clinical information: (1) Status classification (Risk of Anemia / No Anemia) and (2) Estimated Hemoglobin (Hb) concentration, helping users get an initial view of the condition's severity.",
+                "Our Mission: With appropriate sensitivity for screening purposes, MingX Hemoscan aims to become a community healthcare support tool, helping parents and grassroots healthcare workers detect cases requiring medical intervention early, especially in resource-limited areas.",
+                "Important Note: This is a SCREENING tool, not a replacement for professional medical diagnosis. Always consult a doctor for final conclusions."
+            ]
+        },
+        {
+            "sectionTitle": "Contact & Feedback",
+            "content": [
+                "For any feedback, please contact:",
+                "Email: nminh1243@gmail.com"
+            ]
+        }
+    ]
+}

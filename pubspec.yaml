@@ -51,6 +51,10 @@ flutter:
     - assets/images/
     - assets/ml/
     - assets/data/
+    - assets/data/about_vi.json
+    - assets/data/about_en.json
+    - assets/data/guide_vi.json
+    - assets/data/guide_en.json
 
   #         weight: 700
   #

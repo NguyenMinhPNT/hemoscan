@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import '../../controllers/language_controller.dart';
 
 class GuideController extends GetxController {
   // Biến lưu dữ liệu JSON
@@ -9,10 +10,15 @@ class GuideController extends GetxController {
   // Biến trạng thái loading
   final RxBool isLoading = true.obs;
 
+  final languageController = Get.find<LanguageController>();
+
   @override
   void onInit() {
     super.onInit();
     loadGuideContent();
+
+    // Listen to language changes and reload content
+    ever(languageController.currentLocale, (_) => loadGuideContent());
   }
 
   /// Load guide data from JSON file
@@ -21,9 +27,13 @@ class GuideController extends GetxController {
       // Bắt đầu loading
       isLoading(true);
 
+      // Determine which JSON file to load based on current language
+      final String fileName = languageController.isEnglish
+          ? 'assets/data/guide_en.json'
+          : 'assets/data/guide_vi.json';
+
       // Đọc file JSON từ assets
-      final String jsonString =
-          await rootBundle.loadString('assets/data/guide_vi.json');
+      final String jsonString = await rootBundle.loadString(fileName);
 
       // Parse JSON string thành Map
       final Map<String, dynamic> parsedData = json.decode(jsonString);
@@ -33,8 +43,8 @@ class GuideController extends GetxController {
     } catch (e) {
       // Xử lý lỗi nếu có
       Get.snackbar(
-        'Lỗi',
-        'Không thể tải dữ liệu hướng dẫn: $e',
+        'error'.tr,
+        '${'error_analysis'.tr}: $e',
         snackPosition: SnackPosition.BOTTOM,
       );
     } finally {

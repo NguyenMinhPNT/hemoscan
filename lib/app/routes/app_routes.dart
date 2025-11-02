@@ -6,4 +6,5 @@ abstract class AppRoutes {
   static const RESULT = '/result';
   static const GUIDE = '/guide';
   static const ABOUT = '/about';
+  static const LANGUAGE = '/language';
 }

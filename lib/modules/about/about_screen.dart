@@ -13,7 +13,7 @@ class AboutScreen extends GetView<AboutController> {
         return Scaffold(
           backgroundColor: Colors.pink.shade50,
           appBar: AppBar(
-            title: const Text('Giới thiệu'),
+            title: Text('about_title'.tr),
             centerTitle: true,
             backgroundColor: Colors.white,
           ),
@@ -25,7 +25,7 @@ class AboutScreen extends GetView<AboutController> {
       return Scaffold(
         backgroundColor: Colors.pink.shade50,
         appBar: AppBar(
-          title: Text(controller.aboutData['title'] ?? 'Giới thiệu'),
+          title: Text(controller.aboutData['title'] ?? 'about_title'.tr),
           centerTitle: true,
           backgroundColor: Colors.white,
         ),
